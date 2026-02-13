@@ -40,7 +40,7 @@ export default function App() {
           <Text style={styles.txtCinza}>Ou entre com</Text>
         </View>
 
-        <View styles={styles.redes}>
+        <View style={styles.redes}>
           <Image source={require("./assets/github.png")} style={styles.socialIcon} />
           <Image source={require("./assets/google.png")} style={styles.socialIcon} />
           <Image source={require("./assets/instagram.png")} style={styles.socialIcon} />
@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
     width: '100%',
     marginTop: 70,
     justifyContent: 'center',
-    alignItens: 'center'
+    alignItems: 'center'
   },
 
   title: {
@@ -78,6 +78,7 @@ const styles = StyleSheet.create({
     width: 80,
     height: 80,
     resizeMode: 'contain',
+    justifyContent: 'center'
   },
 
   Icon: {
@@ -169,20 +170,20 @@ const styles = StyleSheet.create({
 
   redes: {
     flexDirection: 'row',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
     marginVertical: 10,
     gap: 40,
   },
 
   socialIcon: {
-    width: 40,
+    width: 60,
     height: 40,
     resizeMode: 'contain',
   },
 
   rodape: {
     marginTop: 15,
-    alignItens: 'center',
+    alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'row',
     gap: 5,
